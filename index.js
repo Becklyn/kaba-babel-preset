@@ -1,5 +1,6 @@
 module.exports = {
     plugins: [
+        // es2015
         ["babel-plugin-transform-es2015-template-literals", {loose: false, spec: false}],
         ["babel-plugin-transform-es2015-literals"],
         ["babel-plugin-transform-es2015-function-name"],
@@ -17,5 +18,8 @@ module.exports = {
         ["babel-plugin-transform-es2015-parameters"],
         ["babel-plugin-transform-es2015-destructuring", {loose: false}],
         ["babel-plugin-transform-es2015-block-scoping"],
+
+        // additional transforms
+        ["babel-plugin-transform-react-jsx", {pragma: "h"}],
     ],
-}
+};

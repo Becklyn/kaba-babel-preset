@@ -42,6 +42,16 @@ If they are not included there is also a reason for why they are not included.
 | `babel-plugin-transform-regenerator`                      | 🚫         | We don't want to use the runtime. |
 
 
+Additional transforms
+---------------------
+
+All transforms that are not adapted from `es2015`.
+
+| Transform                             | Included? | Reason / Comment |
+| ------------------------------------- | --------- | ---------------- |
+| `babel-plugin-transform-react-jsx`    | ✅         | The pragma is set to `h`, for `preact` compatibility. |
+
+
 Disclaimer
 ----------
 
