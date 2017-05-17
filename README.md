@@ -26,7 +26,7 @@ If they are not included there is also a reason for why they are not included.
 | `babel-plugin-transform-es2015-shorthand-properties`      | ✅         |                   |
 | `babel-plugin-transform-es2015-duplicate-keys`            | ✅         |                   |
 | `babel-plugin-transform-es2015-computed-properties`       | ✅         |                   |
-| `babel-plugin-transform-es2015-for-of`                    | ✅         |                   |
+| `babel-plugin-transform-es2015-for-of`                    | 🚫         | Compilation to `Symbol` usages is not desired, as the polyfill should not be used. |
 | `babel-plugin-transform-es2015-sticky-regex`              | ✅         |                   |
 | `babel-plugin-transform-es2015-unicode-regex`             | ✅         |                   |
 | `babel-plugin-check-es2015-constants`                     | ✅         |                   |
@@ -46,3 +46,5 @@ Disclaimer
 ----------
 
 Kaba and this preset are used internally in Becklyn Studios. The reasons stated above might only be valid in the context of this work.
+
+Most of the constraints are filesize based, so that if the compilation heavily increases the code size, the transform is not desired.

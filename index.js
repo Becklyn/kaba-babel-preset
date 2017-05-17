@@ -10,7 +10,6 @@ module.exports = {
         ["babel-plugin-transform-es2015-shorthand-properties"],
         ["babel-plugin-transform-es2015-duplicate-keys"],
         ["babel-plugin-transform-es2015-computed-properties", {loose: false}],
-        ["babel-plugin-transform-es2015-for-of", {loose: false}],
         ["babel-plugin-transform-es2015-sticky-regex"],
         ["babel-plugin-transform-es2015-unicode-regex"],
         ["babel-plugin-check-es2015-constants"],
