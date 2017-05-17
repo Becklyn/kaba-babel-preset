@@ -4,7 +4,7 @@ Kaba Babel preset
 A custom preset for usage in Babel in combination with Kaba.
 
 It limits the available ES2015 functionality, so that a few cases are deliberately not compiled.
-It should is based on the [Babel preset `es2015`](https://babeljs.io/docs/plugins/preset-es2015/).
+It is based on the [Babel preset `es2015`](https://babeljs.io/docs/plugins/preset-es2015/).
 
 
 Included transforms
