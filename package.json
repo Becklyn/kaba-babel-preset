@@ -1,6 +1,6 @@
 {
     "name": "kaba-babel-preset",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Babel preset for usage in kaba.",
     "repository": {
         "type": "git",
