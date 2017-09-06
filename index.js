@@ -5,7 +5,7 @@ module.exports = {
         ["babel-plugin-transform-es2015-literals"],
         ["babel-plugin-transform-es2015-function-name"],
         ["babel-plugin-transform-es2015-arrow-functions", {spec: false}],
-        ["babel-plugin-transform-es2015-block-scoped-functions"],
+        ["babel-plugin-transform-es2015-block-scoped-functions", {throwIfClosureRequired: true}],
         ["babel-plugin-transform-es2015-classes", {loose: false}],
         ["babel-plugin-transform-es2015-object-super"],
         ["babel-plugin-transform-es2015-shorthand-properties"],
