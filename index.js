@@ -18,6 +18,7 @@ module.exports = {
         ["babel-plugin-transform-es2015-parameters"],
         ["babel-plugin-transform-es2015-destructuring", {loose: false}],
         ["babel-plugin-transform-es2015-block-scoping"],
+        ["babel-plugin-syntax-dynamic-import"],
 
         // additional transforms
         ["babel-plugin-transform-react-jsx", {pragma: "h"}],
