@@ -20,6 +20,12 @@ module.exports = {
         ["babel-plugin-transform-es2015-block-scoping"],
         ["babel-plugin-syntax-dynamic-import"],
 
+        // Stage 3 proposals
+
+        // set with loose: true, as the compilation is pretty big
+        // https://babeljs.io/docs/plugins/transform-class-properties/
+        ["babel-plugin-transform-class-properties", {loose: true}],
+
         // additional transforms
         ["babel-plugin-transform-react-jsx", {pragma: "h"}],
     ],
