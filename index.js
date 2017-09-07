@@ -1,6 +1,8 @@
 module.exports = {
     plugins: [
-        // es2015
+        // ------------------------------------------------------------------------------------------
+        // ES 2015
+        // ------------------------------------------------------------------------------------------
         ["babel-plugin-transform-es2015-template-literals", {loose: false, spec: false}],
         ["babel-plugin-transform-es2015-literals"],
         ["babel-plugin-transform-es2015-function-name"],
@@ -18,15 +20,21 @@ module.exports = {
         ["babel-plugin-transform-es2015-parameters"],
         ["babel-plugin-transform-es2015-destructuring", {loose: false}],
         ["babel-plugin-transform-es2015-block-scoping"],
-        ["babel-plugin-syntax-dynamic-import"],
 
+
+        // ------------------------------------------------------------------------------------------
         // Stage 3 proposals
+        // ------------------------------------------------------------------------------------------
+        ["babel-plugin-syntax-dynamic-import"],
 
         // set with loose: true, as the compilation is pretty big
         // https://babeljs.io/docs/plugins/transform-class-properties/
         ["babel-plugin-transform-class-properties", {loose: true}],
 
-        // additional transforms
+
+        // ------------------------------------------------------------------------------------------
+        // JSX
+        // ------------------------------------------------------------------------------------------
         ["babel-plugin-transform-react-jsx", {pragma: "h"}],
     ],
 };
