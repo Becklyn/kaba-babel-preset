@@ -1,5 +1,22 @@
 module.exports = {
+    // the plugins are applied from top to bottom, so the order is important.
+    // Especially the syntax plugins (like class properties) need to be all other plugins.
     plugins: [
+        // ------------------------------------------------------------------------------------------
+        // Stage 3 proposals
+        // ------------------------------------------------------------------------------------------
+        ["babel-plugin-syntax-dynamic-import"],
+
+        // set with loose: true, as the compilation is pretty big
+        // https://babeljs.io/docs/plugins/transform-class-properties/
+        ["babel-plugin-transform-class-properties", {loose: true}],
+
+
+        // ------------------------------------------------------------------------------------------
+        // JSX
+        // ------------------------------------------------------------------------------------------
+        ["babel-plugin-transform-react-jsx", {pragma: "h"}],
+
         // ------------------------------------------------------------------------------------------
         // ES 2015
         // ------------------------------------------------------------------------------------------
@@ -20,21 +37,5 @@ module.exports = {
         ["babel-plugin-transform-es2015-parameters"],
         ["babel-plugin-transform-es2015-destructuring", {loose: false}],
         ["babel-plugin-transform-es2015-block-scoping"],
-
-
-        // ------------------------------------------------------------------------------------------
-        // Stage 3 proposals
-        // ------------------------------------------------------------------------------------------
-        ["babel-plugin-syntax-dynamic-import"],
-
-        // set with loose: true, as the compilation is pretty big
-        // https://babeljs.io/docs/plugins/transform-class-properties/
-        ["babel-plugin-transform-class-properties", {loose: true}],
-
-
-        // ------------------------------------------------------------------------------------------
-        // JSX
-        // ------------------------------------------------------------------------------------------
-        ["babel-plugin-transform-react-jsx", {pragma: "h"}],
     ],
 };
