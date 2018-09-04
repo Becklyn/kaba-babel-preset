@@ -5,7 +5,6 @@ module.exports = {
         // ------------------------------------------------------------------------------------------
         // Stage 3 proposals
         // ------------------------------------------------------------------------------------------
-        ["@babel/plugin-proposal-decorators"],
         ["@babel/plugin-syntax-dynamic-import"],
         ["@babel/plugin-proposal-json-strings"],
 
