@@ -5,37 +5,38 @@ module.exports = {
         // ------------------------------------------------------------------------------------------
         // Stage 3 proposals
         // ------------------------------------------------------------------------------------------
-        ["babel-plugin-syntax-dynamic-import"],
+        ["@babel/plugin-proposal-decorators"],
+        ["@babel/plugin-syntax-dynamic-import"],
+        ["@babel/plugin-proposal-json-strings"],
 
         // set with loose: true, as the compilation is pretty big
         // https://babeljs.io/docs/plugins/transform-class-properties/
-        ["babel-plugin-transform-class-properties", {loose: true}],
+        ["@babel/plugin-proposal-class-properties", {loose: true}],
 
 
         // ------------------------------------------------------------------------------------------
         // JSX
         // ------------------------------------------------------------------------------------------
-        ["babel-plugin-transform-react-jsx", {pragma: "h"}],
+        ["@babel/plugin-transform-react-jsx", {pragma: "h"}],
 
         // ------------------------------------------------------------------------------------------
         // ES 2015
         // ------------------------------------------------------------------------------------------
-        ["babel-plugin-transform-es2015-template-literals", {loose: false, spec: false}],
-        ["babel-plugin-transform-es2015-literals"],
-        ["babel-plugin-transform-es2015-function-name"],
-        ["babel-plugin-transform-es2015-arrow-functions", {spec: false}],
-        ["babel-plugin-transform-es2015-block-scoped-functions", {throwIfClosureRequired: true}],
-        ["babel-plugin-transform-es2015-classes", {loose: false}],
-        ["babel-plugin-transform-es2015-object-super"],
-        ["babel-plugin-transform-es2015-shorthand-properties"],
-        ["babel-plugin-transform-es2015-duplicate-keys"],
-        ["babel-plugin-transform-es2015-computed-properties", {loose: false}],
-        ["babel-plugin-transform-es2015-sticky-regex"],
-        ["babel-plugin-transform-es2015-unicode-regex"],
-        ["babel-plugin-check-es2015-constants"],
-        ["babel-plugin-transform-es2015-spread", {loose: false}],
-        ["babel-plugin-transform-es2015-parameters"],
-        ["babel-plugin-transform-es2015-destructuring", {loose: false}],
-        ["babel-plugin-transform-es2015-block-scoping"],
+        ["@babel/plugin-transform-arrow-functions", {spec: false}],
+        ["@babel/plugin-transform-block-scoped-functions"],
+        ["@babel/plugin-transform-block-scoping", {"throwIfClosureRequired": true}],
+        ["@babel/plugin-transform-classes"],
+        ["@babel/plugin-transform-computed-properties", {loose: true}],
+        ["@babel/plugin-transform-destructuring", {loose: false}],
+        ["@babel/plugin-transform-duplicate-keys"],
+        ["@babel/plugin-transform-function-name"],
+        ["@babel/plugin-transform-literals"],
+        ["@babel/plugin-transform-object-super"],
+        ["@babel/plugin-transform-parameters", {loose: true}],
+        ["@babel/plugin-transform-shorthand-properties"],
+        ["@babel/plugin-transform-spread"],
+        ["@babel/plugin-transform-sticky-regex"],
+        ["@babel/plugin-transform-template-literals", {loose: true}],
+        ["@babel/plugin-transform-unicode-regex"],
     ],
 };
