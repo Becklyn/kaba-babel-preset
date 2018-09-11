@@ -23,7 +23,7 @@ module.exports = {
         // ------------------------------------------------------------------------------------------
         ["@babel/plugin-transform-arrow-functions", {spec: false}],
         ["@babel/plugin-transform-block-scoped-functions"],
-        ["@babel/plugin-transform-block-scoping", {"throwIfClosureRequired": true}],
+        ["@babel/plugin-transform-block-scoping"],
         ["@babel/plugin-transform-classes"],
         ["@babel/plugin-transform-computed-properties", {loose: true}],
         ["@babel/plugin-transform-destructuring", {loose: false}],
