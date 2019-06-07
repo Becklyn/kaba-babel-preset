@@ -1,4 +1,4 @@
+/.github
 /.idea
 /node_modules
-/renovate.json
 /yarn.lock
