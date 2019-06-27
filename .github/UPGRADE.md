@@ -1,2 +1,4 @@
-1.x to 2.0
+2.x to 3.0
 ==========
+
+*   Explicit transforms were replaced with `@babel/preset-env`.
