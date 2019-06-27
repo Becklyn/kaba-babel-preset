@@ -1,3 +1,9 @@
+4.0.0
+=====
+
+*   Return environments (`legacy` and `modern`) instead of a single config.
+
+
 3.0.1
 =====
 
