@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/Becklyn/kaba-babel-preset.git"
     },
-    "version": "3.0.1",
+    "version": "4.0.0",
     "main": "index.js",
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "^7.4.4",
