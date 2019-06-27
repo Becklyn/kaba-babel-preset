@@ -11,6 +11,10 @@ module.exports = {
         ["@babel/plugin-proposal-class-properties", {loose: true}],
 
         // default env
-        ["@babel/preset-env", {spec: false}],
+        ["@babel/preset-env", {
+            spec: false,
+            useBuiltIns: "entry",
+            corejs: 3,
+        }],
     ]
 };
