@@ -1,3 +1,9 @@
+4.0.1
+=====
+
+*   Moved `@babel/preset-env` to the correct place in the config.
+
+
 4.0.0
 =====
 

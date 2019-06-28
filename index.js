@@ -6,6 +6,15 @@ const browserslistConfigs = require("@becklyn/browserslist-config/envs");
 function buildConfig (browserslistConfig)
 {
     return {
+        presets: [
+            // default env
+            ["@babel/preset-env", {
+                spec: false,
+                useBuiltIns: "entry",
+                corejs: 3,
+                targets: browserslistConfig,
+            }],
+        ],
         plugins: [
             // ------------------------------------------------------------------------------------------
             // Stage 3 proposals
@@ -16,14 +25,6 @@ function buildConfig (browserslistConfig)
             // set with loose: true, as the compilation is pretty big
             // https://babeljs.io/docs/plugins/transform-class-properties/
             ["@babel/plugin-proposal-class-properties", {loose: true}],
-
-            // default env
-            ["@babel/preset-env", {
-                spec: false,
-                useBuiltIns: "entry",
-                corejs: 3,
-                targets: browserslistConfig,
-            }],
         ],
     };
 }
