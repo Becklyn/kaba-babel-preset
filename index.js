@@ -21,6 +21,7 @@ function buildConfig (browserslistConfig)
             // ------------------------------------------------------------------------------------------
             ["@babel/plugin-proposal-json-strings"],
             ["@babel/plugin-proposal-nullish-coalescing-operator", {loose: true}],
+            ["@babel/plugin-proposal-numeric-separator"],
             ["@babel/plugin-syntax-dynamic-import"],
 
             // set with loose: true, as the compilation is pretty big
