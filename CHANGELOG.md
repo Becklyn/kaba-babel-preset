@@ -3,3 +3,4 @@
 
 *   Activate support for the nullish coalescing operator.
 *   Activate support for numeric separators.
+*   Re-add react preset

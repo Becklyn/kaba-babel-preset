@@ -8,6 +8,10 @@ function buildConfig (browserslistConfig)
     return {
         presets: [
             // default env
+            ["@babel/preset-react", {
+                pragma: "h",
+                pragmaFrag: "Fragment",
+            }],
             ["@babel/preset-env", {
                 spec: false,
                 useBuiltIns: "entry",
