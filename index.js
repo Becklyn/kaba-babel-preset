@@ -8,11 +8,11 @@ function buildConfig (browserslistConfig)
     return {
         presets: [
             // default env
-            ["@babel/preset-react", {
+            [require("@babel/preset-react"), {
                 pragma: "h",
                 pragmaFrag: "Fragment",
             }],
-            ["@babel/preset-env", {
+            [require("@babel/preset-env"), {
                 spec: false,
                 useBuiltIns: "entry",
                 corejs: 3,
@@ -23,14 +23,14 @@ function buildConfig (browserslistConfig)
             // ------------------------------------------------------------------------------------------
             // Stage 3 proposals
             // ------------------------------------------------------------------------------------------
-            ["@babel/plugin-proposal-json-strings"],
-            ["@babel/plugin-proposal-nullish-coalescing-operator", {loose: true}],
-            ["@babel/plugin-proposal-numeric-separator"],
-            ["@babel/plugin-syntax-dynamic-import"],
+            [require("@babel/plugin-proposal-json-strings")],
+            [require("@babel/plugin-proposal-nullish-coalescing-operator"), {loose: true}],
+            [require("@babel/plugin-proposal-numeric-separator")],
+            [require("@babel/plugin-syntax-dynamic-import")],
 
             // set with loose: true, as the compilation is pretty big
             // https://babeljs.io/docs/plugins/transform-class-properties/
-            ["@babel/plugin-proposal-class-properties", {loose: true}],
+            [require("@babel/plugin-proposal-class-properties"), {loose: true}],
         ],
     };
 }
