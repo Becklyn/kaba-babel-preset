@@ -1,3 +1,9 @@
+4.1.2
+=====
+
+*   (improvement) Use better mode for `useBuiltIns`.
+
+
 4.1.1
 =====
 
