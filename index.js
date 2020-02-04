@@ -14,7 +14,7 @@ function buildConfig (browserslistConfig)
             }],
             [require("@babel/preset-env"), {
                 spec: false,
-                useBuiltIns: "entry",
+                useBuiltIns: "usage",
                 corejs: 3,
                 targets: browserslistConfig,
             }],
