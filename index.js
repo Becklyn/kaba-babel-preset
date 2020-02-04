@@ -28,7 +28,7 @@ function buildConfig (browserslistConfig)
             [require("@babel/plugin-proposal-numeric-separator")],
             [require("@babel/plugin-syntax-dynamic-import")],
 
-            // set with loose: true, as the compilation is pretty big
+            // set with loose: true, as the compilation is pretty big otherwise
             // https://babeljs.io/docs/plugins/transform-class-properties/
             [require("@babel/plugin-proposal-class-properties"), {loose: true}],
         ],
