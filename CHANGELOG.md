@@ -2,6 +2,7 @@
 =====
 
 *   (improvement) Use better mode for `useBuiltIns`.
+*   (improvement) Bump dependencies.
 
 
 4.1.1
