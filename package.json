@@ -18,5 +18,8 @@
         "@babel/preset-env": "^7.4.5",
         "@babel/preset-react": "^7.0.0",
         "@becklyn/browserslist-config": "^2.1.0"
+    },
+    "peerDependencies": {
+        "core-js": "^3.0.0"
     }
 }
