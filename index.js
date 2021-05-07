@@ -31,6 +31,9 @@ function buildConfig (browserslistConfig)
             // set with loose: true, as the compilation is pretty big otherwise
             // https://babeljs.io/docs/plugins/transform-class-properties/
             [require("@babel/plugin-proposal-class-properties"), {loose: true}],
+            // has to have the same setting as @babel/plugin-proposal-class-properties
+            // https://babeljs.io/docs/en/babel-plugin-proposal-private-methods#options
+            [require("@babel/plugin-proposal-private-methods"), {loose: true}],
         ],
     };
 }
