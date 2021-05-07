@@ -1,3 +1,9 @@
+4.1.3
+=====
+
+*   (bug) Remove `loose` warning from build output. 
+
+
 4.1.2
 =====
 
