@@ -1,3 +1,10 @@
+4.1.4
+=====
+
+*   (bug) Remove warning from build output about `@babel/plugin-proposal-private-property-in-object` vs. `loose` mode.
+*   (improvement) Upgrade dependencies to their latest version. 
+
+
 4.1.3
 =====
 

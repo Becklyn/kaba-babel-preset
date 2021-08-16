@@ -34,6 +34,9 @@ function buildConfig (browserslistConfig)
             // has to have the same setting as @babel/plugin-proposal-class-properties
             // https://babeljs.io/docs/en/babel-plugin-proposal-private-methods#options
             [require("@babel/plugin-proposal-private-methods"), {loose: true}],
+            // has to have the same setting as @babel/plugin-proposal-class-properties
+            // https://babeljs.io/docs/en/babel-plugin-proposal-private-methods#options
+            [require("@babel/plugin-proposal-private-property-in-object"), {loose: true}],
         ],
     };
 }
