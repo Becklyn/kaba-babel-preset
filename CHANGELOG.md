@@ -2,7 +2,8 @@
 =====
 
 *   (bug) Remove warning from build output about `@babel/plugin-proposal-private-property-in-object` vs. `loose` mode.
-*   (improvement) Upgrade dependencies to their latest version. 
+*   (improvement) Upgrade dependencies to their latest version.
+*   (internal) Migrate from TravisCI to CircleCI.
 
 
 4.1.3
